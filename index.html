@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Músicas Sertanejas</title>
+    <link rel="stylesheet" href="sytles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Músicas Sertanejas</h2>
+        <form id="musicForm">
+            <input type="hidden" id="musicIndex">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" required>
+            
+            <label for="artista">Artista:</label>
+            <input type="text" id="artista" required>
+            
+            <label for="ano">Ano de Lançamento:</label>
+            <input type="number" id="ano" required>
+            
+            <button type="submit">Adicionar</button>
+        </form>
+        
+        <h3>Lista de Músicas</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Artista</th>
+                    <th>Ano</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="musicTable"></tbody>
+        </table>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
